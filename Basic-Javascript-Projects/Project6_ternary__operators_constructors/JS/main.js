@@ -4,11 +4,16 @@ function Ride_Function() {
     Can_ride = (Height < 52) ? "You are too short" : "You are tall enough";
     document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
 }
-
+//Function that gets triggered from HTML
 function Vote_Function() {
+    //Creating variables 
     var Age, Can_vote;
+    //settign age equal to the value in the element age (whatever is inputted from user)
     Age = document.getElementById("Age").value;
+    // settign can_vote to the ternary functionng to check age and if it's over 18 it gives the
+    //value to the right of the colon.
     Can_vote = (Age < 18) ? "You are too young" : "You are old enough";
+    //sending back "can_vote"
     document.getElementById("Vote").innerHTML = Can_vote + " to vote.";
 }
 
