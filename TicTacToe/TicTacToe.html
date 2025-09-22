@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tic Tac Toe Play Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <script src ="js/tictactoe.js"></script>
+</head>
+
+<body id="body">
+    <!--Container for the game title-->
+    <div class = "container">
+    <h1>Play Tic Tac Toe- Get Three in a Row!</h1>
+    </div>
+    <!--Game board container in the center-->
+    <div class="center-container">
+        <!--Canvas is an HTML element that creates a blank drawing surface-->
+        <!--width="608" and height="608" define the size of the canvas in pixels, creating a 608 x 608 square canvas-->
+        <!--Canvas makes a blank space within those dimensions.-->
+        <canvas id="win-lines" width="608" height="608"></canvas>
+        <!--here's the gameboard represented by a 3 row 3 column table -->
+        <!--Table creates the overall grid layout-->
+        <table>
+            <!-- the <tr> defines a row in the table. -->
+            <tr>
+                <!--First row-->
+                <!--The <td> is each cell in the grid. The id's are the unique identifyers for each cell so we can track the moves with the javascript code-->
+                    <!--the onclick = placexoro is for when a user clicks a cell it calls the function passing the cells id as an argument.-->
+                <td id="0" onclick="placeXOrO('0')"></td>
+                <td id="1" onclick="placeXOrO('1')"></td>
+                <td id="2" onclick="placeXOrO('2')"></td>
+            </tr>
+            <tr>
+                <!--Second row-->
+                <td id="3" onclick="placeXOrO('3')"></td>
+                <td id="4" onclick="placeXOrO('4')"></td>
+                <td id="5" onclick="placeXOrO('5')"></td>
+            </tr>
+            <tr>
+                <!--Third row-->
+                <td id="6" onclick="placeXOrO('6')"></td>
+                <td id="7" onclick="placeXOrO('7')"></td>
+                <td id="8" onclick="placeXOrO('8')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Running Javascript in the Console</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--p elements to display the variables-->
+    <p id="globalVariables" onclick="global()"> Global- click here</p>
+    <p id="localVariables" onclick="local()">Local- click here</p>
+    <hr>
+
+    <p id="concat" onclick="concatenate()">Click here for a concatenated sentence.</p>
+    <hr>
+
+    <button onclick="newCourse()">Click here for a new course</button>
+    <p id="displayCourse"></p>
+    <hr>
+
+    <p id="displayAge"></p>
+
+    <script>
+        let a = 3;
+        let b = 4;
+
+        function global() {
+            result = a + b;
+            document.getElementById("globalVariables").innerHTML = "Global Variable a (" + a + ") plus global variable b (" + b + ") equals " + result;
+        }
+
+        function local() {
+            //Local variable has local scope, so it is not available outside of the function
+            let c = 4;
+            let d = 3;
+            result = c + d;
+            document.getElementById("localVariables").innerHTML = "Local Variable c (" + c + ") plus locaL variable d (" + d + ") equals " + result;
+        }
+        //undefined variable, can be defined at a later time int he program.
+        //Will declare the values in the console.
+        let sentence1;
+        let sentence2;
+
+        function concatenate() {
+            //Concatenate sentence 1 and sentence 2 using the .concat() method.
+            let concatSent = sentence1.concat(sentence2);
+
+            //display result on webpage
+            document.getElementById("concat").innerHTML = concatSent;
+
+            //Display result in the console
+            console.log(concatSent);
+        }
+        //Object Constructor
+        function Course(Name, Type, Duration) {
+            this.courseName = "Todays new course is: " + Name + "<br>"
+            this.courseType = "Type: " + Type + "<br>";
+            this.courseDur = "Course Length: " + Duration + "<br>";
+        }
+
+        let js = new Course("Javascript", "Code", 55);
+        let py = new Course("Python", "Coce", 90);
+
+        //this goes in browser console to test : function newCourse(){ document.getElementById("displayCourse").innerHTML= js.courseName + js.courseType + js.courseDur;
+
+        //Get user input and calculate the age based on the year
+        let year = prompt("Type in the year you were born");
+        let yearNow = new Date().getFullYear();
+        let age = Math.floor(yearNow - year);
+
+        //         if (age > 25){
+        //     document.getElementById("displayAge").innerHTML = "You are old enough to rent a car!";
+        //     console.log(age);
+        // }else{
+        //     document.getElementById("displayAge").innerHTML = "You are not old enough to rent a car.";
+        //     console.log(age);
+        // } (write this in browser console)
+
+        //Window object challenge: console.log(window.innerHeight);  //Outputs Height of browsers viewport
+        //console.log(window.navigator.userAgent);  // Outputs information about the browser and operating system
+        //window.alert("This is a window method!");  // Displays an alert box
+        //window.confirm("Do you want to continue?");  // Displays a confirmation dialog with Ok and Cancel
+
+
+    </script>
+</body>
+
+</html>

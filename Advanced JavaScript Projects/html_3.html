@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Javascript/Javascript_3.js"></script>
+</head>
+
+<body>
+    <h1>Characters</h1>
+    <h3>Click on a universe to see a character!</h3>
+    <!--Un-ordered list-->
+    <ul>
+        <!--Each list represents a universe-->
+        <!-- Each <li> represents a universe and when you click, it calls the displayType() function and passes 
+            itself (this) as an argument. The data-character-type attribute has the name of a character from that universe. -->
+        <li onclick="displayType(this)" id="DC" data-character-type="BatMan">DC</li>
+        <li onclick="displayType(this)" id="Star Wars" data-character-type="Luke Skywalker">Star Wars</li>
+        <li onclick="displayType(this)" id="Marvel" data-character-type="Thor">Marvel</li>
+        <li onclick="displayType(this)" id="Star Trek" data-character-type="Jean-Luc Picard">Star Trek</li>
+    </ul>>
+
+    <h1>Animals</h1>
+    <h3>Click on the environment to see the animal!</h3>
+
+    <ul>
+        <!--Each list item is an animal which will be passed through when it calls the displayAnimal function-->
+        <li onclick="displayAnimal(this)" id="Jungle" data-animal-type="Monkey">Jungle</li>
+        <li onclick="displayAnimal(this)" id="Farm" data-animal-type="Chicken">Farm</li>
+        <li onclick="displayAnimal(this)" id="Ocean" data-animal-type="Fish">Ocean</li>
+        <li onclick="displayAnimal(this)" id="Rainforest" data-animal-type="Macaw">Rainforest</li>
+    </ul>
+
+    <h1></h1>
+</body>
+
+</html>
