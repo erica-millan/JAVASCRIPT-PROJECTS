@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="A basic HTML, CSS and JavaScript Calculator">
+    <meta name="author" content="Erica M.">
+    <!--! Link CSS File-->
+    <link rel="stylesheet" href="CSS/Calculator_CSS.css">
+    <!--! Link JavaScript File-->
+    <script src="Javascript/Calculator_Javascript.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <!--Calculator screen input-->
+        <input type="text" class="calculator-screen" value="0" disabled>
+        <!--All of the buttons for the calculator-->
+        <!--HTML alone will display plain buttons for numbers and operators all in a row.-->
+        <div class="calculator-keys">
+            <!--putting operator buttons in "operator" class. -->
+            <!--Buttons are in the order of how they will be displayed ona a calculator-->
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <button type="button" class="operator" value="*">&times;</button>
+            <button type="button" class="operator" value="/">&divide;</button>
+            <!--Number buttons 0-9 -->
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+
+            <button type="button" value="0">0</button>
+
+            <button type="button" value=".">.</button>
+            <button type="button" class="all-clear" value="all-clear">AC</button>
+            <button type="button" class="equal-sign operator" value="=">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
