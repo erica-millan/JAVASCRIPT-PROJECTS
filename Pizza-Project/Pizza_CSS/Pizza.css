@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Main container for the program*/
+#menuBG {
+	width:400px;
+	height:470px;
+	margin:10px auto;
+	}
+
+    /*#frmMenu is 600px wide, the combined width of the 3 columns since they are 200px wide .left, .center, .right(*/
+#frmMenu {
+	width:600px;
+	height:200px;
+	}
+
+#totalPrice {
+	width:200px;
+	height:190px;
+	margin:20px auto;
+	float:right;
+	}
+/*.left, .center, .right are floated to create a 3 column layout*/
+/*the "float" creates the column structure*/
+.left {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+	
+.right {
+	width:200px;
+	height:200px;
+	float:right;
+	}
+
+#showText {
+	width:200px;
+	height:190px;
+	margin:0px auto;
+	float:left;
+	}
+/*shows the reciept and total price*/
+#cart {
+	top:0;margin:0px auto;
+	width:400px;
+	height:200px;
+    }
+	
+#btnOrder {
+	margin:10px 0px 0px 100px;
+	width:100px;
+	height:40px;
+	display: block;
+	margin: 25px auto;
+	}
+
+/*Adding a rule to set background color to blue*/
+
+body {
+    background-color: #fffaf0;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: #5c5470;
+    text-align: center;
+} 
+
+h3{
+  font-family: "Lora", serif;
+   color: #7d6b91;
+}
+
+div {
+    font-family: "Open Sans", sans-serif;
+     color: #4b3c5e;
+}
