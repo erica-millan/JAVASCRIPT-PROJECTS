@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic AJAX Demo</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class='container' id="content">
+		<h1>Sign up for our Newsletter</h1>
+		<div class="display">
+			<form>
+				<!--Creating input textbox for name so it can be added to thank you message.-->
+				<input id="fullName" placeholder="Name">
+				<input placeholder="Email">
+				<!--when you click the button it calls function getMsg()-->
+				<input onclick ="getMsg();" type="button" class="btn" value="Submit" onclick="getMsg();"/>
+			</form>
+		</div>
+	</div>
+	<script src="ajaxScript.js"></script>
+</body>
+</html>
