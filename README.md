@@ -1,5 +1,4 @@
 # JAVASCRIPT-PROJECTS
-# HTML & CSS Projects
 
 A collection of sample websites built using HTML, CSS, and JavaScript.
 
